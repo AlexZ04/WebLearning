@@ -1,4 +1,59 @@
-h1 {
-    margin: auto;
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    background: linear-gradient(90deg, #20a6d8 0%, #008cdc 57%, #20db95 90%);;
+
+    height: 100vh;
     text-align: center;
+}
+
+h1 {
+    color: white;
+    line-height: 1.4;
+    font-size: 4rem;
+}
+
+button {
+    background-color: #f2e98a;
+    font-family: 'Muli', sans-serif;
+    border-radius: 20px;
+    height: 10vh;
+    width: 15vw;
+}
+
+button:hover {
+    border: thick double rgb(248, 182, 107);
+}
+
+button:active {
+    background-color: #f8ecc9;
+    border: thick double rgb(197, 190, 190);
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.button-list li {
+    margin: 10px;
 }
